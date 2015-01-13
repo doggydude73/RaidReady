@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RaidReady</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_raid">CreateRaid</string>
+    <string name="title_activity_create_raid_team">CreateRaidTeam</string>
+    <string name="title_activity_open_raid_team">OpenRaidTeam</string>
+    <string name="createMemberDetailFragmentHeader">Member Information</string>
+    <string name="realm_list_prompt">Choose a Realm</string>
+
+    <string-array name="realm_list">
+        <item>Shandris</item>
+        <item>Aerie-Peak</item>
+        <item>Stormrage</item>
+    </string-array>
+
+    <string name="title_activity_create_member_detail">CreateMemberDetailActivity</string>
+
+</resources>
