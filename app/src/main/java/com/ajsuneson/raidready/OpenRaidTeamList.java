@@ -9,9 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class OpenRaidTeamList extends Activity {
@@ -66,8 +69,13 @@ public class OpenRaidTeamList extends Activity {
 			e.printStackTrace();
 			listedTeams.removeAll(listedTeams);
 		}
-		
-		DisplayCreatedTeamsFragment dctf = (DisplayCreatedTeamsFragment) getFragmentManager().findFragmentById(R.id.displayCurrentRaidTeamsFragment);
+        DisplayCreatedTeamsFragment dctf = (DisplayCreatedTeamsFragment) getFragmentManager().findFragmentById(R.id.displayCurrentRaidTeamsFragment);
 		dctf.setList(listedTeams);
 	}
+
+    public void sendToCreateRaidTeam(String teamName){
+        Intent modifyRaidTeamIntent = new Intent(this, CreateRaidTeam.class);
+        modifyRaidTeamIntent.putExtra(GlobalO.TEAM_NAME_EXTRA, teamName);
+        startActivity(modifyRaidTeamIntent);
+    }
 }

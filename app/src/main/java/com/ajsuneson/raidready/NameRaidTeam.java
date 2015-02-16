@@ -83,6 +83,10 @@ public class NameRaidTeam extends Activity {
 			osw.write(teamName);
 			osw.flush();
 			osw.close();
+
+            // Create the File for the new team
+            FileOutputStream newRaidTeamFile = openFileOutput(teamName, Context.MODE_PRIVATE);
+            newRaidTeamFile.close();
 			
 			// Proceed to next activity
 			launchTeamCreation(teamName);
@@ -98,7 +102,7 @@ public class NameRaidTeam extends Activity {
 				osw.close();
 				
 				// Proceed to the next activity
-				
+				launchTeamCreation(teamName);
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();

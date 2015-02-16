@@ -12,8 +12,6 @@ import android.widget.ListView;
 public class DisplayCreatedTeamsFragment extends ListFragment{
 	
 	int mCurCheckPosition = 0;
-	public static final String URLTeam = "http://www.broomball.mtu.edu/api/team/id/";
-	public static final String URLPlayer = "http://www.broomball.mtu.edu/api/player/id/";
 
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
@@ -49,6 +47,7 @@ public class DisplayCreatedTeamsFragment extends ListFragment{
 		mCurCheckPosition = position;
 		
 		// TODO Make call to start the new activity that displays raid team members
+        ortl.sendToCreateRaidTeam(teamName);
 	}
 
 }

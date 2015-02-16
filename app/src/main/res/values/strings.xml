@@ -11,9 +11,27 @@
     <string name="realm_list_prompt">Choose a Realm</string>
 
     <string-array name="realm_list">
-        <item>Shandris</item>
-        <item>Aerie-Peak</item>
-        <item>Stormrage</item>
+        <item>Aegwynn</item>
+        <item>Aerie Peak</item>
+        <item>Agamaggan</item>
+        <item>Aggramar</item>
+        <item>Akama</item>
+        <item>Alexstrasza</item>
+        <item>Alleria</item>
+        <item>Altar of Storms</item>
+        <item>Alterac Mountains</item>
+        <item>Aman\'Thul</item>
+        <item>Andorhal</item>
+        <item>Anetheron</item>
+        <item>Antonidas</item>
+        <item>Anub\'arak</item>
+        <item>Anvilmar</item>
+        <item>Arathor</item>
+        <item>Archimonde</item>
+        <item>Area 52</item>
+        <item>Argent Dawn</item>
+        <item>Arthas</item>
+
     </string-array>
 
     <string name="title_activity_create_member_detail">CreateMemberDetailActivity</string>

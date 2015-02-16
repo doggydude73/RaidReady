@@ -1,4 +1,4 @@
-C:\Users\doggydude73\AndroidstudioProjects\RaidReady\app\build\intermediates\classes\debug
-C:\Users\doggydude73\AndroidstudioProjects\RaidReady\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-23097ee5ceea486236138037218f16e62f46da16.jar
-C:\Users\doggydude73\AndroidstudioProjects\RaidReady\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-6dbee08f650ad27d8082f4bd38cf127ac3a8e336.jar
-C:\Users\doggydude73\AndroidstudioProjects\RaidReady\app\build\intermediates\pre-dexed\debug\classes-e6eda8917fbf9571d32f2c9e349ca32e977a3b71.jar
+/Users/asuneson/AndroidStudioProjects/RaidReady/app/build/intermediates/classes/debug
+/Users/asuneson/AndroidStudioProjects/RaidReady/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-6528e2f771c78a7c22182f5eda3f668be4ef71b5.jar
+/Users/asuneson/AndroidStudioProjects/RaidReady/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-5a04d526016747263bce7e03a47e49c483de0214.jar
+/Users/asuneson/AndroidStudioProjects/RaidReady/app/build/intermediates/pre-dexed/debug/classes-c7a86f52d97a616e944c331c8ce44377e7abd11a.jar

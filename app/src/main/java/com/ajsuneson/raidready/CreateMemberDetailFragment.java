@@ -1,12 +1,22 @@
 package com.ajsuneson.raidready;
 
+import android.app.Activity;
 import android.app.Fragment;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Spinner;
+import android.widget.TextView;
+
+import com.ajsuneson.raidready.Utilities.DownloadWebpageTask;
 
 public class CreateMemberDetailFragment extends Fragment{
+
+    public static Activity thisActivity;
 
 	/**
 	 * Create a new instance of DetailsFragment, initialized to
@@ -27,7 +37,7 @@ public class CreateMemberDetailFragment extends Fragment{
 		return getArguments().getInt("index", 0);
 	}
 
-	@Override
+
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		if (container == null) {
@@ -42,8 +52,23 @@ public class CreateMemberDetailFragment extends Fragment{
 		}
 		View rootView = inflater.inflate(R.layout.fragment_details, container, false);
 
+        Spinner spinner = (Spinner)rootView.findViewById(R.id.RealmListOptions);
+        TextView dataDump = (TextView) rootView.findViewById(R.id.dataDump);
 
-		return rootView;
-	}	
+        ConnectivityManager connMgr = (ConnectivityManager)
+                getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected()) {
+            thisActivity = getActivity();
+            new DownloadWebpageTask().execute(GlobalO.REALM_LIST_URL);
+        } else {
+            dataDump.setText("No network connection available.");
+        }
+
+
+        return rootView;
+	}
+
+
 
 }

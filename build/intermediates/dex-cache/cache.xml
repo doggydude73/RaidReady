@@ -2,25 +2,25 @@
 <items version="2" >
 
     <item
-        jar="B:\Program Files\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Users\doggydude73\AndroidstudioProjects\RaidReady\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-23097ee5ceea486236138037218f16e62f46da16.jar" />
-    </item>
-    <item
-        jar="C:\Users\doggydude73\AndroidstudioProjects\RaidReady\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Users\doggydude73\AndroidstudioProjects\RaidReady\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-6dbee08f650ad27d8082f4bd38cf127ac3a8e336.jar" />
-    </item>
-    <item
-        jar="C:\Users\doggydude73\AndroidstudioProjects\RaidReady\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jar="/Users/asuneson/AndroidStudioProjects/RaidReady/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Users\doggydude73\AndroidstudioProjects\RaidReady\app\build\intermediates\pre-dexed\debug\classes-e6eda8917fbf9571d32f2c9e349ca32e977a3b71.jar" />
+        <dex dex="/Users/asuneson/AndroidStudioProjects/RaidReady/app/build/intermediates/pre-dexed/debug/classes-c7a86f52d97a616e944c331c8ce44377e7abd11a.jar" />
+    </item>
+    <item
+        jar="/Users/asuneson/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/asuneson/AndroidStudioProjects/RaidReady/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-6528e2f771c78a7c22182f5eda3f668be4ef71b5.jar" />
+    </item>
+    <item
+        jar="/Users/asuneson/AndroidStudioProjects/RaidReady/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/asuneson/AndroidStudioProjects/RaidReady/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-5a04d526016747263bce7e03a47e49c483de0214.jar" />
     </item>
 
 </items>
