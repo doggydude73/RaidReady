@@ -3,18 +3,21 @@ package com.ajsuneson.raidready.Utilities;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.ajsuneson.raidready.CreateMemberDetailFragment;
+import com.ajsuneson.raidready.JSONParsers.RealmStatus;
 import com.ajsuneson.raidready.R;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by asuneson on 2/16/15.
@@ -78,10 +81,23 @@ public class DownloadWebpageTask extends AsyncTask<String, Void, String> {
     }
 
     private String readIt(InputStream stream, int len) throws IOException, UnsupportedEncodingException{
-        Reader reader = null;
-        reader = new InputStreamReader(stream, "UTF-8");
-        char[] buffer = new char[len];
-        reader.read(buffer);
-        return new String(buffer);
+        RealmStatus realmStatus = new RealmStatus().readRealmStatusStream(stream);
+        List<RealmStatus.Realm> realmlist = realmStatus.realmList;
+        List<String> listForAdapter = new ArrayList<String>();
+
+        for (RealmStatus.Realm realm: realmlist){
+            String fullDescription = realm.name + " - " + realm.population.toString();
+            listForAdapter.add(fullDescription);
+        }
+
+        final Spinner realmListDisplay = (Spinner) parentActivity.findViewById(R.id.RealmListOptions);
+
+        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(parentActivity, android.R.layout.simple_spinner_item, listForAdapter.toArray(new String[listForAdapter.size()]));
+        parentActivity.runOnUiThread(new Runnable() {
+            public void run() {
+                realmListDisplay.setAdapter(adapter);
+            }
+        });
+        return "Success";
     }
 }
